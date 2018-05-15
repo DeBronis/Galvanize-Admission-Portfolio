@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Conference Registration</title>
+        <link href="css/main.css" type="text/css" rel="stylesheet" />
+        <script src="js/main.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Registration.html">Register</a>
+            <a href="Activities.html">Activities</a>
+            <a href="Workshops.html">Workshops</a>
+            <a href="Keynote.html">Keynote Speaker</a>
+            <a href="Meals.html">Meals</a>
+            <a href="Awards.html">Awards</a>
+        </nav>
+        <h1>Register for the Conference Here</h1>
+        <form method="post" action="ThankYou.html" id="registrationForm">
+            <fieldset>
+                <legend>Conference Identification</legend>
+                <label for="idNum">Conference ID Number</label>
+                <input type="text" name="Conference ID" title="6 digit conference ID is required" maxlength="6" placeholder="Conference ID" id="idNum" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Personal Information:</legend>
+                <label for="idName">Title:</label>
+                <select name="title" id="idName">
+                    <option value="blank" selected></option>
+                    <option value="Mr">Mr.</option>
+                    <option value="Ms">Ms.</option>
+                    <option value="Mrs">Mrs.</option>
+                    <option value="Dr">Dr.</option>
+                </select>
+                
+                <label for="1stName">First Name:</label>
+                <input type="text" name="First Name" title="First name is required" placeholder="First Name" id="1stName" required>
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="Last Name" title="Last name is required" placeholder="Last Name" id="lastName" required> <br>
+                
+                <label for="address1">Address Line 1:</label>
+                <input type="text" name="Address Line 1" title="Address is required" placeholder="Address Line 1" id="address1" required> <br>
+                
+                <label for="address2">Address Line 2:</label>
+                <input type="text" name="Address Line 2" title="Address is optional" placeholder="Address Line 2" id="address2"> <br>
+                
+                <label for="city">City:</label>
+                <input type="text" name="City" title="City is required" placeholder="City" id="city" required>
+                
+                <label for="state">State:</label>
+                <select required title="Please select your state, required" id="state">
+                            <option value="" selected></option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                
+                <label for="zipCode">Zip Code:</label>
+                <input type="text" name="Zip Code" title="Zip Code is required" maxlength="10" placeholder="Zip Code" id="zipCode" required> <br>
+                
+                <label for="telNum">Telephone Number:</label>
+                <input type="tel" name="Telephone Number" title="Telephone number is required" maxlength="12" placeholder="Telephone Number" id="telNum" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" name="Email Address" title="Email address is required" placeholder="Email Address" id="email" required>
+                 
+            </fieldset>
+            
+            <fieldset>
+                
+                <legend>Company Information:</legend>
+                <label for="compWeb">Company Website:</label>
+                <input type="url" name="Company Website" title="Company Website is optional" placeholder="Conference Website (optional)" id="compWeb">
+                
+                <label for="compPos">Position in Company:</label>
+                <input type="text" name="Position in Company" title="Position in Company is required" placeholder="Position in Company" id="compPos" required>
+                
+                <label for="compName">Name of Company:</label>
+                <input type="text" name="Name of Company" title="Name of Company is required" placeholder="Name of Company" id="compName" required>
+                
+            </fieldset>
+            
+            <fieldset>
+                
+                <legend>Dining Information:</legend>
+                <p>Meal Plan:</p>
+                <input type="radio" name="Meal Plan" value="full meal plan" title="A selection is required" id="fullMeal" required/>
+                <label for="fullMeal">Full Meal Plan ($225.00)</label>
+                
+                <input type="radio" name="Meal Plan" value="Second Day Dinner Only" title="A selection is required" id="2ndDin" required/>
+                <label for="2ndDin">Second Day Dinner Only ($75.00)</label>
+                
+                <input type="radio" name="Meal Plan" value="No Meal Plan" title="A selection is required" id="noMeal" required/>
+                <label for="noMeal">No Meal Plan ($00.00)</label>
+                
+            </fieldset>
+            
+            
+            <fieldset>
+                
+                <legend>Billing Information:</legend>
+                <label for="firstNameCC">First Name:</label>
+                 <input type="text" name="First Name Billing" title="First name is required" placeholder="First Name" id="firstNameCC" required>
+                 
+                 <label for="lastNameCC">Last Name:</label>
+                <input type="text" name="Last Name Billing" title="Last name is required" placeholder="Last Name" id="lastNameCC" required>
+                
+                <p>Card Type:</p>
+                <input type="radio" name="card" value="Visa" title="A selection is required" id="visa" required>
+                <label for="visa">Visa</label>
+                
+                <input type="radio" name="card" value="American Express" title="A selection is required" id="amEx" required>
+                <label for="amEx">American Express</label>
+                
+                <input type="radio" name="card" value="Mastercard" title="A selection is required" id="masterCard" required>
+                <label for="masterCard">Mastercard</label> <br>
+                
+                
+                
+                <label for="cardNum">Card Number:</label>
+                <input type="text" name="Card Number" title="Card Number is required" maxlength="16" id="cardNum" required>
+                
+                <label for="csv">Card Security Value:</label>
+                <input type="text" name="Card Security Value" title="CSV Number is required" maxlength="4" id="csv" required>
+                
+                <label for="expY">Expiration Year:</label>
+                <input type="text" name="Expiration Year" title="Expiration year is required" maxlength="4" id="expY" required>
+                
+                <label for="expM">Expiration Month:</label>
+                <input type="text" name="Expiration Month" title="Expiration month is required" maxlength="2" id="expM" required>
+                
+                
+            </fieldset>
+            
+            
+            
+            
+            <fieldset>
+                
+                <legend>
+                    Workshop Registration
+                </legend>
+                <p>Session 1:</p>
+                <input type="radio" name="workshops" title="A selection is required" value="javascript for beginners" id="jsB">
+                <label for="jsB">JavaScript for Beginners</label>
+                
+                <input type="radio" name="workshops" title="A selection is required" value="fundamentals of javascript" id="Fjs">
+                <label for="Fjs">Fundamentals of JavaScript</label>
+                
+                <input type="radio" name="workshops" title="A selection is required" value="javascript for experts" id="jsE">
+                <label for="jsE">JavaScript for Experts</label> <br>
+                
+                <p>Session 2:</p>
+                <input type="radio" name="workshops2" title="A selection is required" value="html/css for beginners" id="htmlcssB">
+                <label for="htmlcssB">HTML/CSS for Beginners</label>
+                
+                <input type="radio" name="workshops2" title="A selection is required" value="fundamentals of html/css" id="htmlcssF">
+                <label for="htmlcssF">Fundamentals of HTML/CSS</label>
+                
+                <input type="radio" name="workshops2" title="A selection is required" value="html/css for experts" id="htmlcssE">
+                <label for="htmlcssE">HTML/CSS for Experts</label>
+                
+                <p>Session 3:</p>
+                <input type="radio" name="workshops3" title="A selection is required" value="building websites for beginners" id="webB">
+                <label for="webB">Website Building for Beginners</label>
+                
+                <input type="radio" name="workshops3" title="A selection is required" value="building websites intermediate" id="webI">
+                <label for="webI">Website Building for Intermediates</label>
+                
+                <input type="radio" name="workshops3" title="A selection is required" value="building websites for masters" id="webM">
+                <label for="webM">Master my Website</label> <br>
+               
+                
+                
+                <input type="submit" value="Submit Registration" onclick="registration()">
+                  
+            </fieldset>
+                
+                
+                
+               
+                
+        </form>
+       <hr/>
+        <footer>
+            <address>
+                Contact Information: <br/>
+                Phone: (555)555-5555 <br/>
+                Email: <a href="mailto:webdev@conference.org">webdev@conference.org</a>
+            </address>
+            <p>&copy; DeBronis Warren 2018</p>
+        </footer>
+    </body>
+</html>
